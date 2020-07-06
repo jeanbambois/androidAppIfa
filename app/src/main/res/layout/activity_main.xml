@@ -17,9 +17,9 @@
             android:id="@+id/textView4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome to CRUD app"
+            android:text="Set the coordinate of your client"
             android:textColor="#FFFFFF"
-            android:textSize="30sp"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <LinearLayout
@@ -33,7 +33,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Firstname"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextFirstName"
@@ -56,7 +57,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Lastname"
-                android:textColor="#FFFFFF" />
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextLastName"
@@ -74,22 +76,46 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/emailText"
+                android:id="@+id/XTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Email"
-                android:textColor="#FFFFFF" />
+                android:text="coordinateX"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextEmail"
+                android:id="@+id/coordinateXtext"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:textColor="#FFFFFF" />
+                android:inputType="number" />
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/YTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="coordinateY"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/coordinateYtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number" />
         </LinearLayout>
 
         <Button
@@ -98,11 +124,27 @@
             android:layout_height="wrap_content"
             android:text="Add user" />
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See them on the map"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonChangeActivite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voir map" />
+
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
-            android:scrollbars="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
 
     </LinearLayout>
+
 </LinearLayout>
